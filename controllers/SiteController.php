@@ -122,4 +122,15 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+    /**
+     * Action to say something
+     *
+     * @param string $target
+     * @return string
+     */
+    public function actionSay($target = 'World')
+    {
+        return $this->render('say', ['target' => $target]);
+    }
 }
