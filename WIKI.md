@@ -24,7 +24,7 @@ TOOLS:
 		}
 	}
 	```
-3. In case you have older version of php you can upgrade it. On C9.io I found this way works fine:
+3. In case you have older version of php you can upgrade it. You can skip to the next step if you want to ignore platform requirements. On C9.io I found this way works fine:
 	```bash
 	$ sudo apt-get update
 	$ sudo apt-get install libmcrypt-dev
@@ -52,4 +52,4 @@ TOOLS:
 	Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies
 	```
 	
-4. Use ```composer install``` to get all dependencies
+4. Use ```composer install``` to get all dependencies or ```composer install --ignore-platform-reqs``` to skip errors on php version. But error-prone development is not guaranteed.
