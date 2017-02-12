@@ -1,3 +1,7 @@
+TOOLS:
+- Windows 7 on local development environment. WAMP, Apache 2.4.23, PHP 5.6.25, Mysql 5.7.14, PhpStorm 2016.3.2
+- As production: c9.io Ubuntu 14.04.3 LTS. Apache/2.4.7, PHP 5.6.30, Mysql 5.5.53, Sublime like IDE
+
 1. Before using composer to fetch yii use: 
 	
 	```bash
@@ -48,3 +52,4 @@
 	Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies
 	```
 	
+4. Use ```composer install``` to get all dependencies
