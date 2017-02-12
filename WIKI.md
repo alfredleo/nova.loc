@@ -21,10 +21,12 @@
 	}
 	```
 3. In case you have older version of php you can upgrade it. On C9.io I found this way works fine:
+	
 	```bash
 	$ sudo apt-get update
 	$ sudo apt-get install libmcrypt-dev
 	```
+	
 	Next, we download phpbrew and move it to _/usr/local/bin_:
 	```bash
 	$ curl -L -O https://github.com/phpbrew/phpbrew/raw/master/phpbrew
