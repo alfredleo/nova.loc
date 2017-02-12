@@ -1,8 +1,8 @@
 1. Before using composer to fetch yii use:
-	```
+	```bash
 	composer global require "fxp/composer-asset-plugin: *"
 	```
-2. Add this to composer.json
+2. Add this to _composer.json_
 	```json
 	"extra": {
 		"asset-installer-paths": {
@@ -23,7 +23,7 @@
 	$ sudo apt-get update
 	$ sudo apt-get install libmcrypt-dev
 	```
-	Next, we download phpbrew and move it to /usr/local/bin:
+	Next, we download phpbrew and move it to _/usr/local/bin_:
 	```bash
 	$ curl -L -O https://github.com/phpbrew/phpbrew/raw/master/phpbrew
 	$ chmod +x phpbrew
@@ -35,7 +35,7 @@
 	
 	$ phpbrew lookup-prefix ubuntu
 	```
-	Once set up, we install and load PHP 5.6:
+	Once set up, we install and load **PHP 5.6**:
 	```
 	$ phpbrew install 5.6 +default
 	$ phpbrew switch php-5.6.30
