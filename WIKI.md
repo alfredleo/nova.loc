@@ -23,21 +23,21 @@
 3. In case you have older version of php you can upgrade it. On C9.io I found this way works fine:
 	
 	```bash
-	$ sudo apt-get update
-	$ sudo apt-get install libmcrypt-dev
+	sudo apt-get update
+	sudo apt-get install libmcrypt-dev
 	```
 	
 	Next, we download phpbrew and move it to _/usr/local/bin_:
 	```bash
-	$ curl -L -O https://github.com/phpbrew/phpbrew/raw/master/phpbrew
-	$ chmod +x phpbrew
-	$ sudo mv phpbrew /usr/local/bin/
-	$ phpbrew init
+	curl -L -O https://github.com/phpbrew/phpbrew/raw/master/phpbrew
+	chmod +x phpbrew
+	sudo mv phpbrew /usr/local/bin/
+	phpbrew init
 	
 	# add this to your ~/.bashrc
-	$ [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
+	[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
 	
-	$ phpbrew lookup-prefix ubuntu
+	phpbrew lookup-prefix ubuntu
 	```
 	Once set up, we install and load **PHP 5.6**:
 	```
