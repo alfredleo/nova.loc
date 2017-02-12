@@ -1,8 +1,10 @@
-1. Before using composer to fetch yii use:
+1. Before using composer to fetch yii use: 
+	
 	```bash
 	composer global require "fxp/composer-asset-plugin: *"
 	```
-2. Add this to _composer.json_
+2. Add this to _composer.json_: 
+
 	```json
 	"extra": {
 		"asset-installer-paths": {
