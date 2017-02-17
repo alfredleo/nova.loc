@@ -5,7 +5,19 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 # Otherwise forward it to index.php
 RewriteRule . index.php
-# Prevent viewing folders
+# Prevent viewing folders or index of directories
 <IfModule mod_autoindex.c>
   Options -Indexes
 </IfModule>
+# Block access to hidden directories such as .git
+<IfModule mod_rewrite.c>
+  RewriteCond %{SCRIPT_FILENAME} -d
+  RewriteCond %{SCRIPT_FILENAME} -f
+  RewriteRule "(^|/)\." - [F]
+</IfModule>
+# Block access to backup or source files
+<FilesMatch "(\.(bak|config|sql|fla|psd|ini|log|sh|inc|swp|dist)|~)$">
+  Order allow,deny
+  Deny from all
+  Satisfy All
+</FilesMatch>
