@@ -5,3 +5,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 # Otherwise forward it to index.php
 RewriteRule . index.php
+# Prevent viewing folders
+<IfModule mod_autoindex.c>
+  Options -Indexes
+</IfModule>
