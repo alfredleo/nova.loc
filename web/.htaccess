@@ -21,3 +21,7 @@ RewriteRule . index.php
   Deny from all
   Satisfy All
 </FilesMatch>
+# Increase cookie security
+<IfModule php5_module>
+  php_value session.cookie_httponly true
+</IfModule>
