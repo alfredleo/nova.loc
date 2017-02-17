@@ -2,7 +2,7 @@ class_name: AcceptanceTester
 modules:
     enabled:
         - WebDriver:
-            url: http://yii2-app-basic.hello/web/
+            url: http://yii2-app-basic.hello/
             browser: firefox
         - Yii2:
             part: orm
