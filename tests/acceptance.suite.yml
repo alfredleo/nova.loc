@@ -3,7 +3,17 @@ modules:
     enabled:
         - WebDriver:
             url: http://yii2-app-basic.hello/
-            browser: firefox
+            # selenium settings
+#            browser: firefox
+#            port : 4444
+#            restart: false
+            # selenium settings
+            # phantomjs settings
+            browser: phantomjs
+            port : 4443
+            restart: true
+            window_size: 1024x768 # phantom js fails if windows_size is not set
+            # phantomjs settings
         - Yii2:
             part: orm
             entryScript: index-test.php
