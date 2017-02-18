@@ -2,7 +2,7 @@ class_name: AcceptanceTester
 modules:
     enabled:
         - WebDriver:
-            url: http://yii2-app-basic.hello/
+            url: http://nova.loc/
             # selenium settings
 #            browser: firefox
 #            port : 4444
