@@ -8,7 +8,7 @@ TOOLS:
 	composer global require "fxp/composer-asset-plugin: *"
 	```
 2. Add this to _composer.json_. On Windows default location is C:\Users\userName\AppData\Roaming\Composer\composer.json: 
-
+Linux - ~/.composer/composer.json
 	```json
 	"extra": {
 		"asset-installer-paths": {
