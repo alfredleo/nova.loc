@@ -1,10 +1,16 @@
 {
     "name": "yiisoft/yii2-app-basic",
-    "description": "Yii 2 Basic Project Template",
+    "description": "Nova.loc news web site",
     "keywords": ["yii2", "framework", "basic", "project template"],
     "homepage": "http://www.yiiframework.com/",
     "type": "project",
     "license": "BSD-3-Clause",
+    "authors":    {
+        "name": "Alfred Khamidullin",
+        "email": "alfredleo@gmail.com",
+        "homepage": "https://www.facebook.com/alfred.hamidullin",
+        "role": "Developer"
+    },
     "support": {
         "issues": "https://github.com/yiisoft/yii2/issues?state=open",
         "forum": "http://www.yiiframework.com/forum/",
@@ -31,12 +37,7 @@
         "guzzlehttp/guzzle": ">=4.1.4 <7.0"
     },
     "config": {
-        "process-timeout": 1800,
-        "preferred-install": "dist",
-        "github-protocols": ["https","http"],
-        "github-oauth": {
-            "github.com": "902c1225b47f5053cb96b74a746d6830f4df1aa2"
-        }
+        "process-timeout": 1800
     },
     "scripts": {
         "post-create-project-cmd": [

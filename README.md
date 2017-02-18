@@ -7,7 +7,7 @@ TOOLS:
 	```bash
 	composer global require "fxp/composer-asset-plugin: *"
 	```
-2. Add this to _composer.json_: 
+2. Add this to _composer.json_. On Windows default location is C:\Users\userName\AppData\Roaming\Composer\composer.json: 
 
 	```json
 	"extra": {
@@ -20,7 +20,7 @@ TOOLS:
 		"preferred-install": "dist",
 		"github-protocols": ["https","http"],
 		"github-oauth": {
-			"github.com": "902c1225b47f5053cb96b74a746d6830f4df1aa2"
+			"github.com": "<generate a personal access token in https://github.com/settings/tokens>"
 		}
 	}
 	```
