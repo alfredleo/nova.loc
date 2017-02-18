@@ -31,7 +31,12 @@
         "guzzlehttp/guzzle": ">=4.1.4 <7.0"
     },
     "config": {
-        "process-timeout": 1800
+        "process-timeout": 1800,
+        "preferred-install": "dist",
+        "github-protocols": ["https","http"],
+        "github-oauth": {
+            "github.com": "902c1225b47f5053cb96b74a746d6830f4df1aa2"
+        }
     },
     "scripts": {
         "post-create-project-cmd": [
