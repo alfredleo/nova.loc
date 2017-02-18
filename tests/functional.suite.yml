@@ -1,8 +1,8 @@
 # Codeception Test Suite Configuration
-
-# suite for functional (integration) tests.
-# emulate web requests and make application process them.
-# (tip: better to use with frameworks).
+#
+# Suite for functional (integration) tests
+# Emulate web requests and make application process them
+# Include one of framework modules (Symfony2, Yii2, Laravel5) to use it
 
 # RUN `build` COMMAND AFTER ADDING/REMOVING MODULES.
 #basic/web/index.php
@@ -11,3 +11,4 @@ modules:
     enabled:
       - Filesystem
       - Yii2
+      - \Helper\Functional
