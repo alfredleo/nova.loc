@@ -3,7 +3,7 @@ paths:
     tests: tests
     log: tests/_output
     data: tests/_data
-    support: tests/_support
+    helpers: tests/_support
     envs: tests/_envs
 settings:
     bootstrap: _bootstrap.php
@@ -20,9 +20,9 @@ modules:
 
 # To enable code coverage:
 coverage:
-    c3_url: http://nova.loc/index-test.php/
+    c3_url: 'http://nova.loc/index-test.php/'
     enabled: true
-    remote: true
+#    remote: true
 #    remote_config: '../tests/codeception.yml'
     whitelist:
         include:
