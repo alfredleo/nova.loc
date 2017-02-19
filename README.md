@@ -9,6 +9,9 @@ TOOLS:
 	```
 2. Add this to _composer.json_. On Windows default location is C:\Users\userName\AppData\Roaming\Composer\composer.json: 
 Linux - ~/.composer/composer.json
+
+    Github personal access token is set on first error so just generate a new one and paste that to the console it it asks. You can generate a personal access token in https://github.com/settings/tokens
+
 	```json
 	"extra": {
 		"asset-installer-paths": {
@@ -18,10 +21,7 @@ Linux - ~/.composer/composer.json
 	},
 	"config": {
 		"preferred-install": "dist",
-		"github-protocols": ["https","http"],
-		"github-oauth": {
-			"github.com": "<generate a personal access token in https://github.com/settings/tokens>"
-		}
+		"github-protocols": ["https","http"]
 	}
 	```
 3. Use ```composer install``` to get all dependencies or ```composer install --ignore-platform-reqs``` to skip errors on php version.
